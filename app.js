@@ -45,13 +45,15 @@ app.use(express.urlencoded({
   
 
 // index page  
-
-app.get('/', function(req, res){  
+app.get('/',function(req,res){
+	res.send("hello world");
+});
+/*app.get('/', function(req, res){  
 
 res.render("index");  
 
 });  
-
+*/
 app.get('/createpassword', function(req, res) {
 	var result = {
 			errmsg:"",
