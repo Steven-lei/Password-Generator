@@ -43,17 +43,30 @@ app.use(express.urlencoded({
 //All routing start here..   
 
   
-
+/*
 // index page  
 app.get('/',function(req,res){
 	res.send("hello world");
-});
-/*app.get('/', function(req, res){  
+});*/
+
+app.get('/', function(req, res){  
 
 res.render("index");  
 
 });  
-*/
+app.post('/',function(req,res){
+	console.log("post");
+	console.log(req.body);
+	res.send("post of index page");
+});
+app.get('/test',function(req,res){
+	var strpassword="";
+	for(var i='A';i<'D';i++)
+	{
+		strpassword=strpassword+"A";
+		console.log(strpassword);
+	}
+});
 app.get('/createpassword', function(req, res) {
 	var result = {
 			errmsg:"",
