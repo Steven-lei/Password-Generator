@@ -5,6 +5,8 @@ echo install epress
 npm install express
 echo install ejs
 npm install ejs
+echo install cookie-parser
+npm install cookie-parser
 echo init project
-npm init -y
+npm init
 pause
