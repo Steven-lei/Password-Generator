@@ -1,12 +1,9 @@
 @echo off
 cd %~dp0
 echo running path:%cd%
-echo install epress
-npm install express
-echo install ejs
-npm install ejs
-echo install cookie-parser
-npm install cookie-parser
-echo init project
-npm init
+call initproject.bat /wait
+call installexpress.bat /wait
+call installejs /wait
+call installcookie-parser.bat /wait
+echo install finished
 pause
