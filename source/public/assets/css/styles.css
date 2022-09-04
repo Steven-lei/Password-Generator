@@ -2,14 +2,14 @@ body{
 	background-color:skyblue;
 }
 h1 {
-	color:yellow;
+	font-size:150%;text-align:center;color:purple;
 }
 h2 {
-	font-size:150%;text-align:center;color:purple;
+	color:yellow;
 }
 h3{
 	color:blue;
 }
 p {
-	color:white;
+	text-align:center;color:white;
 }
