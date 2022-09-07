@@ -182,6 +182,19 @@ app.all('/clearcookie',function(req,res){
 	res.send("cookie cleared");
 });
 
+// this page can be used to test the creating function by Maribeth
+app.all('/testcreatepassword', function(req,res){
+	var minLen = 8;
+	var maxLen = 20;
+	var withNumeric = true;
+	var withSymbols = false;
+	var withUpperAlphabit = true;
+	var withLowerAlphabit = true;
+	var passwordGenerator = require("./passwordgenerator");
+	strpassword = passwordGenerator.createpassword(minLen, maxLen,withNumeric,withSymbols,withUpperAlphabit,withLowerAlphabit);
+
+	res.send(strpassword);
+});
 
 //error handler
 app.use(function(err, req, res, next) {
