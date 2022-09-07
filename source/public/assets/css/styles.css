@@ -11,5 +11,14 @@ h3{
 	color:blue;
 }
 p {
-	font-size:50%;text-align:center;color:black;
+	font-size:10%;text-align:center;color:black;
+}
+input {
+	size:20;text-align:center;color:red;
+}
+td{
+	font-size:10%;text-align:center;color:black;
+}
+label{
+	padding: 3px;;text-align:center;background-color:pink;color:white;
 }
