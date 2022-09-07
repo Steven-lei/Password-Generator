@@ -1,0 +1,24 @@
+body{
+	background-color:skyblue;
+}
+h1 {
+	font-size:150%;text-align:center;color:purple;
+}
+h2 {
+	color:yellow;
+}
+h3{
+	color:blue;
+}
+p {
+	font-size:10%;text-align:center;color:black;
+}
+input {
+	size:20;text-align:center;color:red;
+}
+td{
+	font-size:10%;text-align:center;color:black;
+}
+label{
+	padding: 3px;;text-align:center;background-color:pink;color:white;
+}
