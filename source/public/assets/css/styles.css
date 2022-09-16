@@ -25,3 +25,12 @@ label{
 footer {
    position: fixed;left: 0;bottom: 0;width: 100%;background-color: white;color: black;text-align: center;font-size:5%;
 }
+input[type=checkbox] {
+  accent-color: green;
+}
+button{
+	background-color:skyblue;color:white;border:solid green;
+}
+button:hover{
+	background-color:green;color:white;
+}
