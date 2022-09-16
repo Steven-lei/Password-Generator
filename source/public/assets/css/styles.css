@@ -28,3 +28,9 @@ footer {
 input[type=checkbox] {
   accent-color: green;
 }
+button{
+	background-color:skyblue;color:white;border:solid green;
+}
+button:hover{
+	background-color:green;color:white;
+}
