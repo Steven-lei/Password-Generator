@@ -1,5 +1,9 @@
 body{
 	background-color:skyblue;
+    background-image: url('/public/123.jpg'); 
+	 background-repeat: no-repeat;
+     background-attachment: fixed;  
+     background-size: cover;
 }
 h1 {
 	font-size:150%;text-align:center;color:purple;
@@ -11,13 +15,16 @@ h3{
 	color:blue;
 }
 p {
-	font-size:10%;text-align:center;color:black;
+	font-size:10%;text-align:center;color:white;
 }
 input {
 	size:20;text-align:center;color:red;
 }
 td{
-	font-size:10%;text-align:center;color:black;
+	font-size:10%;text-align:center;color:white;
+}
+th{
+	font-size:30%;text-align:center;color:white;
 }
 label{
 	text-siztext-align:center;background-color:pink;color:purple;
@@ -29,8 +36,11 @@ input[type=checkbox] {
   accent-color: green;
 }
 button{
-	background-color:skyblue;color:white;border:solid green;
+	background-color:skyblue;color:white;border:solid pink;
 }
 button:hover{
-	background-color:green;color:white;
+	background-color:pink;color:white;
+}
+a{
+	color:green;
 }
