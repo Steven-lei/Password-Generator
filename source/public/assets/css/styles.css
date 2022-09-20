@@ -8,12 +8,7 @@ body{
 h1 {
 	font-size:150%;text-align:center;color:purple;
 }
-h2 {
-	color:yellow;
-}
-h3{
-	color:blue;
-}
+
 p {
 	font-size:10%;text-align:center;color:white;
 }
@@ -39,8 +34,8 @@ button{
 	background-color:skyblue;color:white;border:solid pink;
 }
 button:hover{
-	background-color:pink;color:white;
+	background-color:pink;color:black;
 }
 a{
-	color:green;
+	color:white;
 }
