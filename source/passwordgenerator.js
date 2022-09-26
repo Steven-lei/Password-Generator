@@ -4,7 +4,42 @@ class PasswordGenerator
 	{
 		this.allsymbols = "!@#$%^&*()-=_+{}[]\|:;\"\',./<>?";
 	}
+	isValid(password,minLen,maxLen,withNumeric,withSymbols,withUpperCharacter,withLowerCharacter)
+	{
+		if(password.length < minLen || password.length > maxLen) return false;
+		var bIncludeNumeric = false;
+		var bIncludeSymbols = false;
+		var bIncludeUpperCharacter = false;
+		var bIncludeLowerCharacter = false;
+		
+		for(var i = 0; i< password.length; i++)
+		{
+			var charcode = password.charCodeAt(i);
+			if(charcode >= "0".charCodeAt(0) && charcode <= "9".charCodeAt(0))
+			{
+				bIncludeNumeric = true;
+			}
+			if(charcode >= "A".charCodeAt(0) && charcode <= "Z".charCodeAt(0))
+			{
+				bIncludeUpperCharacter = true;
+			}
+			if(charcode >= "a".charCodeAt(0) && charcode <= "z".charCodeAt(0))
+			{
+				bIncludeLowerCharacter = true;	
+			}
+			if(this.allsymbols.includes(password[i]))
+			{
+				bIncludeSymbols = true;
+			}
+		}
 	
+		if(bIncludeNumeric == withNumeric
+			&& bIncludeSymbols == withSymbols
+			&& bIncludeUpperCharacter == withUpperCharacter
+			&& bIncludeLowerCharacter == withLowerCharacter)
+			return true;
+		return false;
+	}
 	createpassword(minLen,maxLen,withNumeric,withSymbols,withUpperCharacter,withLowerCharacter)
 	{
 		var allcharacters = [];
@@ -47,10 +82,14 @@ class PasswordGenerator
 			var pos = Math.floor(Math.random()*allcharacters.length);
 			strpassword = strpassword + allcharacters[pos];
 		}
-		return strpassword;
+		if(this.isValid(strpassword,minLen,maxLen,withNumeric,withSymbols,withUpperCharacter,withLowerCharacter))
+		{
+			console.log("password:",strpassword);
+			return strpassword;
+		}
+		console.log(strpassword," is an invalid password");
+		return this.createpassword(minLen,maxLen,withNumeric,withSymbols,withUpperCharacter,withLowerCharacter);
 	}
 }
 
 module.exports = new PasswordGenerator();
-
-	                   
