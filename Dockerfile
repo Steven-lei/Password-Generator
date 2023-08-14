@@ -6,7 +6,7 @@ FROM node:20
 WORKDIR /source
 
 # Copy the application files into the working directory
-COPY . /app
+COPY . .
 
 # Install the application dependencies
 
