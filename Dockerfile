@@ -13,6 +13,6 @@ RUN npm install express
 RUN npm install cookie-parser
 RUN npm install ejs
 
-
+EXPOSE 3000
 # Define the entry point for the container
 CMD ["node", "app"]
