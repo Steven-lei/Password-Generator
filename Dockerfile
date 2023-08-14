@@ -3,7 +3,7 @@
 FROM node:20
 
 # Set the working directory in the container
-WORKDIR /source
+WORKDIR /
 
 # Copy the application files into the working directory
 COPY . .
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 # Define the entry point for the container
-CMD ["node", "app"]
+CMD ["node", "app.js"]
