@@ -10,6 +10,6 @@ COPY . .
 
 # Install the application dependencies
 
-EXPOSE 3000
+EXPOSE 80
 # Define the entry point for the container
 CMD ["node", "app.js"]
